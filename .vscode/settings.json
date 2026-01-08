@@ -1,6 +1,6 @@
 {
-  "editor.formatOnSave": false, // 保存时自动格式化
+  "editor.formatOnSave": true, // 保存时自动格式化
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "never" // 保存时自动修复 ESLint 报错
+    "source.fixAll.eslint": "explicit" // 保存时自动修复 ESLint 报错
   }
 }
