@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "lint-staged": {
-    "**/*.{js,mjs,cjs,vue}": "eslint --fix"
+    "**/*.{js,mjs,cjs,vue}": "eslint --fix",
+    "*.{js,mjs,cjs,vue,json,css,less,scss,vue,html,md}": "prettier --write"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
