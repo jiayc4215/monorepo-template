@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "lint": "eslint . --ext .js,.mjs,.cjs,.vue",
-    "lint:fix": "eslint . --ext .js,.mjs,.cjs,.vue --fix"
+    "lint:fix": "eslint . --ext .js,.mjs,.cjs,.vue --fix",
+    "lint:prettier": "prettier --write \"**/*.{js,ts,mjs,cjs,json,tsx,css,less,scss,vue,html,md}\""
   },
   "config": {
     "commitizen": {
@@ -30,9 +31,11 @@
     "commitizen": "^4.3.1",
     "cz-git": "^1.12.0",
     "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.6.2",
     "globals": "^17.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
   }
 }

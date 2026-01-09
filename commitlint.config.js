@@ -1,4 +1,4 @@
-import { defineConfig } from "cz-git";
+import { defineConfig } from "cz-git"
 
 export default defineConfig({
   // 继承 commitlint 的 conventional 规范
@@ -14,7 +14,7 @@ export default defineConfig({
   prompt: {
     // 快捷别名：输入 fd 等价于 docs: fix typos
     alias: {
-      fd: "docs: fix typos",
+      fd: "docs: fix typos"
     },
 
     // 交互过程中的提示文案
@@ -28,7 +28,7 @@ export default defineConfig({
       footerPrefixesSelect: "选择关联 issue 前缀（可选）:",
       customFooterPrefix: "输入自定义 issue 前缀 :",
       footer: "列举关联 issue（可选）例如: #31, #I3244 :\n",
-      confirmCommit: "是否提交或修改 commit ?",
+      confirmCommit: "是否提交或修改 commit ?"
     },
 
     // 提交类型（type）列表
@@ -38,7 +38,7 @@ export default defineConfig({
       { value: "fix", name: "fix:      修复缺陷 | A bug fix" },
       {
         value: "docs",
-        name: "docs:     文档更新 | Documentation only changes",
+        name: "docs:     文档更新 | Documentation only changes"
       },
       { value: "style", name: "style:    代码格式 | 不影响逻辑的样式调整" },
       { value: "refactor", name: "refactor: 代码重构 | 既不是修复也不是新增" },
@@ -47,7 +47,7 @@ export default defineConfig({
       { value: "build", name: "build:    构建相关 | 构建系统或依赖变更" },
       { value: "ci", name: "ci:       持续集成 | CI 配置或脚本修改" },
       { value: "revert", name: "revert:   回退代码 | 回滚某次提交" },
-      { value: "chore", name: "chore:    其他修改 | 非 src / test 变更" },
+      { value: "chore", name: "chore:    其他修改 | 非 src / test 变更" }
     ],
 
     // 是否在 commit message 中使用 emoji
@@ -106,7 +106,7 @@ export default defineConfig({
       // 关联 issue（进行中）
       { value: "link", name: "link:     链接 ISSUES 进行中" },
       // 关闭 issue
-      { value: "closed", name: "closed:   标记 ISSUES 已完成" },
+      { value: "closed", name: "closed:   标记 ISSUES 已完成" }
     ],
 
     // 自定义 issue 前缀位置
@@ -140,6 +140,6 @@ export default defineConfig({
     defaultScope: "",
 
     // subject 默认值
-    defaultSubject: "",
-  },
-});
+    defaultSubject: ""
+  }
+})
