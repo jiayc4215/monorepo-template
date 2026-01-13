@@ -23,7 +23,7 @@ export const modal = (options = {}) => {
   return new Promise(resolve => {
     // 默认的参数
     const defaultOpt = {
-      title: "提示",
+      title: "提示?",
       content: "您确定执行该操作吗?",
       confirmColor: "#f3514f"
     }

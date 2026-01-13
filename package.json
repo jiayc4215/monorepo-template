@@ -14,7 +14,10 @@
     "commit": "git-cz",
     "lint": "eslint . --ext .js,.mjs,.cjs,.vue",
     "lint:fix": "eslint . --ext .js,.mjs,.cjs,.vue --fix",
-    "lint:prettier": "prettier --write \"**/*.{js,ts,mjs,cjs,json,tsx,css,less,scss,vue,html,md}\""
+    "lint:prettier": "prettier --write \"**/*.{js,ts,mjs,cjs,json,tsx,css,less,scss,vue,html,md}\"",
+    "clean:all": "pnpm -r exec rm -rf node_modules && rm -rf node_modules && pnpm store prune",
+    "turbo:dev": "turbo dev",
+    "turbo:build": "turbo build"
   },
   "config": {
     "commitizen": {
@@ -37,7 +40,8 @@
     "globals": "^17.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "turbo": "^2.7.4"
   },
   "engines": {
     "node": ">=20.18.0",

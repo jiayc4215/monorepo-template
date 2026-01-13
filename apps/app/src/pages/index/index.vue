@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { modal } from "monorepo-utils/extendApi"
+import { modal } from "monorepo-utils"
 
 export default {
   data() {
@@ -24,7 +24,6 @@ export default {
   methods: {
     show() {
       modal({
-        content: "Hello",
         showCancel: false
       })
     }

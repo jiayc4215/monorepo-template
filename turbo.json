@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.net.cn/schema.json",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "with": ["monorepo-utils#dev"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "env/**"]
+    }
+  }
+}

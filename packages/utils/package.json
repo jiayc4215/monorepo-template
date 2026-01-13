@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "exports": {
-    "./extendApi": "./extendApi.js"
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
 }
