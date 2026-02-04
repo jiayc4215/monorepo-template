@@ -22,7 +22,7 @@ catalog:
   "@dcloudio/uni-mp-xhs": "3.0.0-4080720251210001"
   "@dcloudio/uni-quickapp-webview": "3.0.0-4080720251210001"
   "vue": "3.4.21"
-  "vue-i18n": "^9.1.9"
+  "vue-i18n": "^11.2.8"
   "@dcloudio/types": "3.4.19"
   "@dcloudio/uni-automator": "3.0.0-4080720251210001"
   "@dcloudio/uni-cli-shared": "3.0.0-4080720251210001"
@@ -32,5 +32,5 @@ catalog:
   "vite": "5.2.8"
 
   "sass": "1.77.6"
-  "sass-loader": "^10.1.1"
-  "@dcloudio/uni-ui": "^1.5.10"
+  "sass-loader": "^16.0.6"
+  "@dcloudio/uni-ui": "^1.5.11"

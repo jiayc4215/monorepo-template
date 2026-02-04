@@ -10,14 +10,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
+    "prepare": "husky",
     "commit": "git-cz",
     "lint": "eslint . --ext .js,.mjs,.cjs,.vue",
     "lint:fix": "eslint . --ext .js,.mjs,.cjs,.vue --fix",
     "lint:prettier": "prettier --write \"**/*.{js,ts,mjs,cjs,json,tsx,css,less,scss,vue,html,md}\"",
     "clean:all": "pnpm -r exec rm -rf node_modules && rm -rf node_modules && pnpm store prune",
     "turbo:dev": "turbo dev",
-    "turbo:build": "turbo build"
+    "turbo:build": "turbo build",
+    "up": "taze major -r -w -I"
   },
   "config": {
     "commitizen": {
@@ -27,21 +28,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.28.2",
   "devDependencies": {
-    "@commitlint/cli": "^20.3.0",
-    "@commitlint/config-conventional": "^20.3.0",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
     "@eslint/js": "^9.39.2",
     "commitizen": "^4.3.1",
     "cz-git": "^1.12.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-vue": "^10.6.2",
-    "globals": "^17.0.0",
-    "husky": "^8.0.3",
+    "eslint-plugin-vue": "^10.7.0",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4",
-    "turbo": "^2.7.4"
+    "prettier": "^3.8.1",
+    "taze": "^19.9.2",
+    "turbo": "^2.8.3"
   },
   "engines": {
     "node": ">=20.18.0",
