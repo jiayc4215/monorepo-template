@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky",
+    "prepare": "husky install",
     "commit": "git-cz",
     "lint": "eslint . --ext .js,.mjs,.cjs,.vue",
     "lint:fix": "eslint . --ext .js,.mjs,.cjs,.vue --fix",
